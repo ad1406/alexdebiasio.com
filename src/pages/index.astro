@@ -1,11 +1,20 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Home";
 ---
+<BaseLayout frontmatter={{ title: pageTitle }}>
+	<p>
+		Welcome to my digital garden. This is a space for learning in public, developing ideas, and connecting concepts across my interests in mathematics, music, and personal systems.
+	</p>
+	<p>
+		This website is a work in progress, much like my understanding of these topics. It serves as a personal notebook, a portfolio, and an invitation to conversation.
+	</p>
 
-<Layout>
-	<Welcome />
-</Layout>
+	<h2>Starting Points</h2>
+	<ul>
+		<li>Explore my <a href="/blog">essays and notes</a>.</li>
+		<li>View my professional background on my <a href="/cv">CV</a>.</li>
+		<li>See a selection of my <a href="/projects">projects</a>.</li>
+	</ul>
+</BaseLayout>
