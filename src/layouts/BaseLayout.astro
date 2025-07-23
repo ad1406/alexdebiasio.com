@@ -30,6 +30,9 @@ const { frontmatter } = Astro.props;
 </html>
 
 <style is:global>
+	/* Import Google Fonts using the new variable font URL */
+	@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
 	/* A modern CSS reset */
 	:root {
 		--accent: #2337ff;
@@ -39,7 +42,8 @@ const { frontmatter } = Astro.props;
 		--off-white: #f4f4f4;
 	}
 	html {
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		/* Apply Source Sans 3 to all body text */
+		font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
 		font-size: 16px;
 		line-height: 1.6;
 		background-color: var(--off-white);
@@ -78,6 +82,8 @@ const { frontmatter } = Astro.props;
 		border-top: 1px solid #ddd;
 	}
 	h1, h2, h3 {
+		/* Apply Source Serif 4 to all headings */
+		font-family: 'Source Serif 4', serif;
 		line-height: 1.2;
 		margin-top: 2em;
 		margin-bottom: 0.5em;
