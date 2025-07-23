@@ -4,17 +4,57 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home";
 ---
 <BaseLayout frontmatter={{ title: pageTitle }}>
-	<p>
-		Welcome to my digital garden. This is a space for learning in public, developing ideas, and connecting concepts across my interests in mathematics, music, and personal systems.
-	</p>
-	<p>
-		This website is a work in progress, much like my understanding of these topics. It serves as a personal notebook, a portfolio, and an invitation to conversation.
-	</p>
-
-	<h2>Starting Points</h2>
-	<ul>
-		<li>Explore my <a href="/blog">essays and notes</a>.</li>
-		<li>View my professional background on my <a href="/cv">CV</a>.</li>
-		<li>See a selection of my <a href="/projects">projects</a>.</li>
-	</ul>
+	<div class="home-layout">
+		<div class="profile-image">
+			<img src="/images/profile.jpg" alt="A photo of Alex De Biasio">
+		</div>
+		<div class="intro-text">
+			<p>
+				Welcome to my digital garden. This is a space for learning in public, developing ideas, and connecting concepts across my interests in mathematics, music, and personal systems.
+			</p>
+			<p>
+				This website is a work in progress, much like my understanding of these topics. It serves as a personal notebook, a portfolio, and an invitation to conversation.
+			</p>
+		</div>
+	</div>
+	
+	<div class="starting-points">
+		<h2>Starting Points</h2>
+		<ul>
+			<li>Explore my <a href="/blog">essays and notes</a>.</li>
+			<li>View my professional background on my <a href="/cv">CV</a>.</li>
+			<li>See a selection of my <a href="/projects">projects</a>.</li>
+		</ul>
+	</div>
 </BaseLayout>
+
+<style>
+	.home-layout {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+	.profile-image img {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%; /* Makes the image circular */
+		object-fit: cover;
+	}
+	.intro-text p {
+		font-size: 1.1rem;
+	}
+	.starting-points {
+		margin-top: 3rem;
+		border-top: 1px solid #ddd;
+		padding-top: 2rem;
+	}
+
+	/* Responsive styles for mobile */
+	@media (max-width: 600px) {
+		.home-layout {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+</style>

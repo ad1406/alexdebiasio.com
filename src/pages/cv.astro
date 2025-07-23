@@ -1,0 +1,218 @@
+---
+// src/pages/cv.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'Curriculum Vitae';
+---
+
+<BaseLayout frontmatter={{ title: 'Curriculum Vitae' }}>
+	<!-- Remove the default h1 from the layout for this page -->
+	<style>h1 { display: none; }</style>
+	
+	<div class="cv-container">
+	<header class="cv-header">
+		<h1>Alex De Biasio</h1>
+		<p>
+			<a href="mailto:alexander.debiasio@gmail.com">alexander.debiasio@gmail.com</a> |
+			(201) 881-9814 |
+			<a href="https://linkedin.com/in/alexdebiasio" target="_blank">linkedin.com/in/alexdebiasio</a> |
+			Hillsdale, NJ
+		</p>
+		<a href="/files/Alex_De_Biasio_CV.pdf" class="download-link" download>Download PDF Version</a>
+	</header>
+
+		<section id="education">
+			<h2>Education</h2>
+			<div class="entry">
+				<div class="entry-header">
+					<span class="title">Williams College</span>
+					<span class="location">Williamstown, MA</span>
+				</div>
+				<div class="entry-subheader">
+					<span class="position">Bachelor of Arts, Double Major in Mathematics and Computer Science</span>
+					<span class="date">Expected May 2028</span>
+				</div>
+			</div>
+			<ul>
+				<li>GPA: 3.85/4.00 • Dean's List Fall 2024</li>
+				<li><strong>Teaching Assistant, Abstract Algebra</strong> (Fall 2025): Selected as a sophomore to mentor 30+ students, leading TA hours and grading proofs each week.</li>
+				<li><strong>Stanford Pre-Collegiate Studies</strong>: Completed 4-year university-level online math sequence (SPCS ULO) in high school, covering Abstract Algebra, Real/Complex Analysis, Linear Algebra, and Differential Equations.</li>
+				<li><strong>Relevant Coursework</strong>: Commutative Algebra, Topology, Data Structures & Algorithms;<br><strong>Planned for Fall 2025</strong>: Computer Organization, Probability, Algebraic Number Theory.</li>
+			</ul>
+		</section>
+
+		<section id="experience">
+			<h2>Experience</h2>
+			<div class="entry">
+				<div class="entry-header">
+					<span class="title">Russell Research</span>
+					<span class="location">East Rutherford, NJ</span>
+				</div>
+				<div class="entry-subheader">
+					<span class="position">Data Engineering Intern</span>
+					<span class="date">June 2025 – Present</span>
+				</div>
+			</div>
+			<ul>
+				<li>Implementing a data pipeline in C#/.NET as part of modernizing a 20+ year legacy system.</li>
+				<li>Developed a comprehensive unit tests using NUnit to validate data transformations.</li>
+				<li>Learned and implemented Git best practices, including atomic and conventional commits.</li>
+			</ul>
+
+			<div class="entry">
+				<div class="entry-header">
+					<span class="title">Russell Research</span>
+					<span class="location">East Rutherford, NJ</span>
+				</div>
+				<div class="entry-subheader">
+					<span class="position">Machine Learning Engineering Intern</span>
+					<span class="date">Summer 2024</span>
+				</div>
+			</div>
+			<ul>
+				<li>Developed an ML pipeline in PyTorch to classify over 140,000 survey questions.</li>
+				<li>Created a tool using confidence-based sampling to efficiently label a large training dataset.</li>
+				<li>Trained and evaluated the performance of 27 different models for the classification task.</li>
+			</ul>
+		</section>
+		
+		<section id="projects-music">
+			<h2>Projects & Music</h2>
+			<ul class="detail-list">
+				<li>
+					<strong>Analytical Research: Structural Analysis of Feinberg's Piano Sonata No. 3</strong><br>
+					<em>Investigated the harmonic language and formal structure of a complex 20th-century work under mentorship of SUNY Purchase professor Jenny Undercofler.</em>
+				</li>
+				<li>
+					<strong>Collaborative Performance: Ensemble Musician & Accompanist</strong><br>
+					<em>Performed as a collaborative pianist in diverse ensembles (Baroque, Brazilian, Choral), developing ability to actively listen and react to musical cues in real time.</em>
+				</li>
+			</ul>
+		</section>
+
+		<section id="technical-skills">
+			<h2>Technical Skills</h2>
+			<ul class="detail-list">
+				<li><strong>Languages</strong>: Java, Python, C#/.NET, LaTeX</li>
+				<li><strong>Technologies</strong>: Git, PyTorch, NUnit, Visual Studio, IntelliJ IDEA, Obsidian</li>
+				<li><strong>Concepts</strong>: Data Structures, Algorithms, Object-Oriented Programming, Unit Testing</li>
+			</ul>
+		</section>
+		
+		<section id="additional">
+			<h2>Additional Information</h2>
+			<ul class="detail-list">
+				<li><strong>Languages</strong>: English (Native), Italian (Fluent)</li>
+				<li><strong>Interests</strong>: Classical & Jazz Piano (15+ years, professional gig experience), Music Composition (piano and FL Studio), Bouldering, Hiking, Tennis</li>
+			</ul>
+		</section>
+
+	</div>
+</BaseLayout>
+
+<style>
+	.cv-container {
+		/* General container for the CV content */
+	}
+
+	.cv-header {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.cv-header h1 {
+		display: block; /* Override the hidden h1 from the layout */
+		font-size: 2.5rem;
+		margin-bottom: 0.25rem;
+		letter-spacing: 1px;
+	}
+	.cv-header p {
+		font-size: 1rem;
+		color: var(--gray);
+		margin: 0;
+	}
+	.cv-header p a {
+		color: var(--black);
+		transition: color 0.2s;
+	}
+	.cv-header p a:hover {
+		color: var(--accent);
+	}
+
+	/* Section Styling */
+	section {
+		margin-bottom: 1.5rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		color: var(--black);
+		padding-bottom: 0.25rem;
+		margin-bottom: 0.75rem;
+		border-bottom: 2px solid var(--black);
+	}
+
+	/* Entry styling for the two-column look */
+	.entry {
+		margin-bottom: 0.5rem;
+	}
+	.entry-header, .entry-subheader {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 1rem;
+	}
+	.entry-header .title {
+		font-weight: bold;
+		font-size: 1.1rem;
+	}
+	.entry-header .location {
+		font-weight: bold;
+		font-size: 1rem;
+	}
+	.entry-subheader .position, .entry-subheader .date {
+		font-style: italic;
+		color: var(--gray);
+	}
+
+	/* List styling for details */
+	ul {
+		list-style-type: disc;
+		padding-left: 1.25rem;
+		margin-top: 0;
+	}
+	ul li {
+		margin-bottom: 0.5rem;
+	}
+	ul.detail-list {
+		list-style-type: none;
+		padding-left: 0;
+	}
+	
+	/* Responsive adjustments for mobile */
+	@media (max-width: 600px) {
+		.entry-header, .entry-subheader {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0;
+		}
+		.cv-header p {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+		}
+	}
+	.download-link {
+		display: inline-block;
+		margin-top: 1rem;
+		padding: 0.5rem 1rem;
+		border: 1px solid var(--accent);
+		color: var(--accent);
+		border-radius: 4px;
+		text-decoration: none;
+		transition: background-color 0.2s, color 0.2s;
+	}
+	.download-link:hover {
+		background-color: var(--accent);
+		color: white;
+	}
+</style>
