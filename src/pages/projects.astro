@@ -1,0 +1,147 @@
+---
+// src/pages/projects.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'Projects';
+---
+
+<BaseLayout frontmatter={{ title: pageTitle }}>
+	<p>
+		Here is a selection of my recent, and very old, projects.
+	</p>
+
+	<div class="project-list">
+		<!-- Project 1: Feinberg Paper -->
+		<div class="project-card">
+			<div class="project-image">
+				<a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQ8GMyX2w-vpc1dlm-_AQc7ZsWmcMK1wvb6e_AqcWg2kYeq4Axrjr9NJPCGh8hs0_S-VkTPOuvsM7pN/pub" target="_blank">
+					<img src="/images/project-feinberg.png" alt="Screenshot of the Feinberg Sonata paper">
+				</a>
+			</div>
+			<div class="project-text">
+				<h3>Analysis of Feinberg's Third Piano Sonata</h3>
+				<p><strong>Date:</strong> 2023</p>
+				<p>
+					A research paper analyzing Samuil Feinberg's 3rd Sonata, written under the mentorship of Professor Jenny Undercofler. It traces the work's influences and briefly analyzes the sonata in other ways.
+				</p>
+				<a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQ8GMyX2w-vpc1dlm-_AQc7ZsWmcMK1wvb6e_AqcWg2kYeq4Axrjr9NJPCGh8hs0_S-VkTPOuvsM7pN/pub" target="_blank">Read the paper →</a>
+			</div>
+		</div>
+
+		<!-- Project 2: YouTube Channel -->
+		<div class="project-card">
+			<div class="project-image">
+				<a href="https://www.youtube.com/@fuguehoppy6956/videos" target="_blank">
+					<img src="/images/project-youtube.png" alt="Screenshot of my YouTube channel">
+				</a>
+			</div>
+			<div class="project-text">
+				<h3>YouTube Score-Video Channel</h3>
+				<p><strong>Date:</strong> 2021–Present</p>
+				<p>
+					A channel dedicated to making classical music more accessible by synchronizing high-quality recordings with their corresponding sheet music.
+				</p>
+				<a href="https://www.youtube.com/@fuguehoppy6956/videos" target="_blank">View the channel →</a>
+			</div>
+		</div>
+
+		<!-- Project 3: OnlineSequencer -->
+		<div class="project-card">
+			<div class="project-image">
+				<a href="https://onlinesequencer.net/members/10105" target="_blank">
+					<img src="/images/project-onlinesequencer.png" alt="Screenshot of OnlineSequencer profile">
+				</a>
+			</div>
+			<div class="project-text">
+				<h3>OnlineSequencer Collection</h3>
+				<p><strong>Date:</strong> ~2017–2021</p>
+				<p>
+					A collection of over 965 sequences created on the OnlineSequencer platform, representing my early explorations in digital music composition.
+				</p>
+				<a href="https://onlinesequencer.net/members/10105" target="_blank">Explore the sequences →</a>
+			</div>
+		</div>
+
+		<!-- Project 4: Scratch Projects -->
+		<div class="project-card">
+			<div class="project-image">
+				<a href="https://scratch.mit.edu/users/ad1406/projects/" target="_blank">
+					<img src="/images/project-scratch.png" alt="Screenshot of Scratch projects page">
+				</a>
+			</div>
+			<div class="project-text">
+				<h3>Early Creative Coding on Scratch</h3>
+				<p><strong>Date:</strong> ~2014–2018</p>
+				<p>
+					My first steps into programming and interactive media, developed on the Scratch platform from age 8 to my mid-teens.
+				</p>
+				<a href="https://scratch.mit.edu/users/ad1406/projects/" target="_blank">See my Scratch projects →</a>
+			</div>
+		</div>
+	</div>
+
+	<h2>Future Projects</h2>
+    <p>
+		I am continuously working on new things. Here are a couple of areas I plan to document here in the future:
+	</p>
+	<ul>
+		<li><strong>Original Compositions:</strong> I am always composing new music, and I plan to create score videos for these and share them publicly.</li>
+		<li><strong>Performance Videos:</strong> I intend to compile a dedicated page of my piano performances, ranging from solo repertoire to accompaniment work.</li>
+	</ul>
+</BaseLayout>
+
+<style>
+	.project-list {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem; /* Space between project cards */
+		margin-top: 2rem;
+	}
+	.project-card {
+		display: flex;
+		align-items: center; /* Vertically align image and text */
+		gap: 2rem; /* Space between image and text */
+		padding-bottom: 2rem;
+		border-bottom: 1px solid #eee;
+	}
+	.project-list .project-card:last-of-type {
+		border-bottom: none;
+	}
+	.project-image img {
+		width: 150px;
+		height: 150px;
+		object-fit: cover; /* This makes the image cover the square without stretching */
+		border-radius: 8px;
+		background-color: #f0f0f0; /* Fallback color */
+		transition: transform 0.2s ease-in-out;
+	}
+	.project-image a:hover img {
+		transform: scale(1.03);
+	}
+	.project-text h3 {
+		margin-top: 0;
+		font-size: 1.25rem;
+	}
+	.project-text p {
+		margin: 0.5rem 0;
+		color: var(--gray);
+	}
+	.project-text p:last-of-type {
+		margin-bottom: 1rem;
+	}
+	.project-text a {
+		font-weight: bold;
+	}
+
+	/* Responsive styles for mobile */
+	@media (max-width: 600px) {
+		.project-card {
+			flex-direction: column; /* Stack image on top of text */
+			align-items: flex-start;
+			gap: 1rem;
+		}
+		.project-image img {
+			width: 100%;
+			height: 200px; /* Rectangular is often better on mobile */
+		}
+	}
+</style>
