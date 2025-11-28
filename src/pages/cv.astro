@@ -15,9 +15,11 @@ const pageTitle = 'Curriculum Vitae';
 			<a href="mailto:alexander.debiasio@gmail.com">alexander.debiasio@gmail.com</a> |
 			(201) 881-9814 |
 			<a href="https://www.linkedin.com/in/alex-d-32337a183/" target="_blank">linkedin.com/in/alex-d-32337a183</a> |
-			Hillsdale, NJ
-		</p>
-		<a href="/files/Alex_De_Biasio_CV.pdf" class="download-link" download>Download PDF Version</a>
+			Hil
+		<div class="download-links">
+			<a href="/files/Alex_De_Biasio_Tech_Resume.pdf" class="download-link" download>Download Math/Tech Resume</a>
+			<a href="/files/Alex_De_Biasio_Music_Resume.pdf" class="download-link" download>Download Music Resume</a>
+		</div>
 	</header>
 
 		<section id="education">
@@ -28,15 +30,16 @@ const pageTitle = 'Curriculum Vitae';
 					<span class="location">Williamstown, MA</span>
 				</div>
 				<div class="entry-subheader">
-					<span class="position">Bachelor of Arts, Double Major in Mathematics and Computer Science</span>
+					<span class="position">Bachelor of Arts, Mathematics</span>
 					<span class="date">Expected May 2028</span>
 				</div>
 			</div>
 			<ul>
 				<li>GPA: 3.85/4.00 • Dean's List</li>
-				<li><strong>Teaching Assistant, Abstract Algebra</strong> (Fall 2025): Selected as a sophomore to mentor 30+ students, leading TA hours and grading proofs each week.</li>
-				<li><strong>Stanford Pre-Collegiate Studies</strong>: Completed 4-year university-level online math sequence (SPCS ULO) in high school, covering Abstract Algebra, Real/Complex Analysis, Linear Algebra, and Differential Equations.</li>
-				<li><strong>Relevant Coursework</strong>: Commutative Algebra, Topology, Data Structures & Algorithms;<br><strong>Planned for Fall 2025</strong>: Computer Organization, Probability, Algebraic Number Theory.</li>
+				<li><strong>Teaching Assistant, Abstract Algebra</strong> (Fall 2025): Selected as a sophomore; leading TA sessions and grading proofs for 30+ students.</li>
+				<li><strong>Galois Theory Tutorial</strong> (Spring 2026): Admitted as a sophomore to junior/senior-level tutorial with Prof. Susan Loepp.</li>
+				<li><strong>Stanford Pre-Collegiate Studies</strong>: Completed 4-year university-level online math sequence in high school, covering Abstract Algebra, Real/Complex Analysis, Linear Algebra, and Differential Equations.</li>
+				<li><strong>Relevant Coursework</strong>: Commutative Algebra, Topology, Algebraic Number Theory, Data Structures & Algorithms, Probability</li>
 			</ul>
 		</section>
 
@@ -49,13 +52,11 @@ const pageTitle = 'Curriculum Vitae';
 				</div>
 				<div class="entry-subheader">
 					<span class="position">Data Engineering Intern</span>
-					<span class="date">June 2025 – Present</span>
+					<span class="date">June–August 2025</span>
 				</div>
 			</div>
 			<ul>
-				<li>Implementing a data pipeline in C#/.NET as part of modernizing a 20+ year legacy system.</li>
-				<li>Developed a comprehensive unit tests using NUnit to validate data transformations.</li>
-				<li>Learned and implemented Git best practices, including atomic and conventional commits.</li>
+				<li>Implemented data pipeline components in C#/.NET; wrote unit tests with NUnit.</li>
 			</ul>
 
 			<div class="entry">
@@ -64,27 +65,80 @@ const pageTitle = 'Curriculum Vitae';
 					<span class="location">East Rutherford, NJ</span>
 				</div>
 				<div class="entry-subheader">
-					<span class="position">Machine Learning Engineering Intern</span>
+					<span class="position">Machine Learning Intern</span>
 					<span class="date">Summer 2024</span>
 				</div>
 			</div>
 			<ul>
-				<li>Developed an ML pipeline in PyTorch to classify over 140,000 survey questions.</li>
-				<li>Created a tool using confidence-based sampling to efficiently label a large training dataset.</li>
-				<li>Trained and evaluated the performance of 27 different models for the classification task.</li>
+				<li>Built and evaluated ML classification approaches in PyTorch on a 140k-question dataset.</li>
+				<li>Designed confidence-based sampling tools for efficient data labeling; compared 27 model configurations.</li>
 			</ul>
 		</section>
+
+		<section id="music">
+			<h2>Music</h2>
+			<div class="entry">
+				<div class="entry-header">
+					<span class="title">Staff Accompanist, Voice Department</span>
+					<span class="location">Williams College</span>
+				</div>
+				<div class="entry-subheader">
+					<span class="position">30+ singers; art song, opera, musical theater</span>
+					<span class="date">Fall 2024–Present</span>
+				</div>
+			</div>
+
+			<div class="entry">
+				<div class="entry-header">
+					<span class="title">Instrumental Collaborator</span>
+					<span class="location">Williams College</span>
+				</div>
+				<div class="entry-subheader">
+					<span class="position">Pilss Trumpet Sonata, Mozart Clarinet Concerto, Mozart Violin Sonatas, Scharwenka Piano Trio</span>
+					<span class="date">Fall 2024–Present</span>
+				</div>
+			</div>
+
+			<div class="entry">
+				<div class="entry-header">
+					<span class="title">Blondie Held Us Hostage</span>
+					<span class="location">New Jersey</span>
+				</div>
+				<div class="entry-subheader">
+					<span class="position">Jazz/Pop Keyboard</span>
+					<span class="date">Summer 2025–Present</span>
+				</div>
+			</div>
+			<ul>
+				<li>Regular engagements: The Mason Jar, Blackjack Mulligans, Crossroads, Parkside Tavern</li>
+			</ul>
+
+			<div class="entry">
+				<div class="entry-header">
+					<span class="title">Choir Accompanist</span>
+					<span class="location">Pascack Valley High School, NJ</span>
+				</div>
+				<div class="entry-subheader">
+					<span class="position"></span>
+					<span class="date">2021–2024, continuing</span>
+				</div>
+			</div>
+		</section>
 		
-		<section id="projects-music">
-			<h2>Projects & Music</h2>
+		<section id="research">
+			<h2>Research & Composition</h2>
 			<ul class="detail-list">
 				<li>
-					<strong>Analytical Research: Structural Analysis of Feinberg's Piano Sonata No. 3</strong><br>
-					<em>Investigated the harmonic language and formal structure of a complex 20th-century work under mentorship of SUNY Purchase professor Jenny Undercofler.</em>
+					<strong>Structural Analysis of Feinberg's Piano Sonata No. 3</strong> (2023)<br>
+					<em>15-page paper situating the sonata within the late-Romantic tradition (Liszt, Chopin, Scriabin) while identifying Feinberg's innovations: free-time first movement, tonally ambiguous fugue subject, Chopin parody, motivic integration. Mentored by Dr. Jennifer Undercofler, SUNY Purchase.</em>
 				</li>
 				<li>
-					<strong>Collaborative Performance: Ensemble Musician & Accompanist</strong><br>
-					<em>Performed as a collaborative pianist in diverse ensembles (Baroque, Brazilian, Choral), developing ability to actively listen and react to musical cues in real time.</em>
+					<strong>Piano Sonata, First Movement</strong> (2024)<br>
+					<em>Original composition; independent study with Argine Safari.</em>
+				</li>
+				<li>
+					<strong>Composition Studies</strong>, Williams College<br>
+					<em>Works for string trio, solo violin, piano, percussion quartet.</em>
 				</li>
 			</ul>
 		</section>
@@ -93,7 +147,7 @@ const pageTitle = 'Curriculum Vitae';
 			<h2>Technical Skills</h2>
 			<ul class="detail-list">
 				<li><strong>Languages</strong>: Java, Python, C#/.NET, LaTeX</li>
-				<li><strong>Technologies</strong>: Git, PyTorch, NUnit, Visual Studio, IntelliJ IDEA, Obsidian</li>
+				<li><strong>Technologies</strong>: Git, PyTorch, NUnit, Visual Studio</li>
 				<li><strong>Concepts</strong>: Data Structures, Algorithms, Object-Oriented Programming, Unit Testing</li>
 			</ul>
 		</section>
@@ -102,7 +156,8 @@ const pageTitle = 'Curriculum Vitae';
 			<h2>Additional Information</h2>
 			<ul class="detail-list">
 				<li><strong>Languages</strong>: English (Native), Italian (Fluent)</li>
-				<li><strong>Interests</strong>: Classical & Jazz Piano (15+ years, professional gig experience), Music Composition (piano and FL Studio), Bouldering, Hiking, Tennis</li>
+				<li><strong>Piano Study</strong>: 15 years</li>
+				<li><strong>Interests</strong>: Bouldering, Hiking, Tennis</li>
 			</ul>
 		</section>
 
@@ -201,12 +256,29 @@ const pageTitle = 'Curriculum Vitae';
 			gap: 0.25rem;
 		}
 	}
+
+	.download-links {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 1rem;
+		flex-wrap: wrap;
+	}
 	.download-link {
 		display: inline-block;
-		margin-top: 1rem;
 		padding: 0.5rem 1rem;
 		border: 1px solid var(--accent);
 		color: var(--accent);
+		border-radius: 4px;
+		text-decoration: none;
+		transition: background-color 0.2s, color 0.2s;
+	}
+	.download-link:hover {
+		background-color: var(--accent);
+		color: white;
+	}
+</style>
+	color: var(--accent);
 		border-radius: 4px;
 		text-decoration: none;
 		transition: background-color 0.2s, color 0.2s;
