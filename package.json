@@ -1,0 +1,8 @@
+{
+  "name": "alexdebiasio.com",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp -R index.html styles.css favicon.ico favicon.png favicon.svg images files projects cv dist/"
+  }
+}
