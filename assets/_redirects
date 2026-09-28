@@ -1,0 +1,6 @@
+# Netlify redirects: keep old links working.
+/projects                      /                                  301
+/projects/*                    /                                  301
+/resume                        /cv/                               301
+/resume/*                      /cv/                               301
+/files/Alex_De_Biasio_CV.pdf   /files/Alex_De_Biasio_Resume.pdf   301
