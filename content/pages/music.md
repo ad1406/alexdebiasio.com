@@ -14,11 +14,17 @@ This year I accompany the Williams choir, and I accompany and help direct the go
 
 ## Solo piano
 
-I've played on a piano recital every semester since I arrived, with pieces by Medtner, Bach, Chopin, and Myaskovsky. Right now I'm learning Schubert's Sonata in C Minor, D. 958, and Schumann's Fantasie in C Major, Op. 17.
+I've taken piano lessons and played on a piano recital every semester since I arrived, with pieces by Medtner, Bach, Chopin, and Myaskovsky. Right now I'm learning Schubert's Sonata in C Minor, D. 958, and Schumann's Fantasie in C Major, Op. 17.
 
 ## Composition
 
-I've taken composition classes at Williams and have written a good amount of music, though none of it is polished enough to share yet. My first experiments with composing were on [OnlineSequencer](https://onlinesequencer.net/members/10105), where I made more than 965 sequences between 2017 and 2021.
+I've taken composition classes at Williams and have written a good amount of music, including:
+
+- [*The Life of a Snail*](https://www.youtube.com/watch?v=bqjrtocCVNo)
+- [*Prelude for Solo Violin*](https://www.youtube.com/watch?v=MViz0eyOG8A)
+- [*String Trio*](https://www.youtube.com/watch?v=eZ_F-uS9z8o)
+
+My first experiments with composing were on [OnlineSequencer](https://onlinesequencer.net/members/10105), where I made more than 965 sequences between 2017 and 2021.
 
 ## Writing and score videos
 
